@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.935817d9.css",
+    "main.js": "/static/js/main.d55f10c8.js",
+    "static/js/27.45c75646.chunk.js": "/static/js/27.45c75646.chunk.js",
+    "static/media/mobile-bannar.png": "/static/media/mobile-bannar.054200c314800182a594.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/home-bannar.jpg": "/static/media/home-bannar.abdfdefba4b1b4fafeab.jpg",
+    "static/media/avatar-exam.png": "/static/media/avatar-exam.3952c8d2f66830f46bbc.png",
+    "static/media/book.png": "/static/media/book.c23a1b4cb59f05b9efd8.png",
+    "static/media/footer-mobile.png": "/static/media/footer-mobile.b1a0797b725c10f234f0.png",
+    "static/media/classes.png": "/static/media/classes.5cd42a24e78df884c733.png",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/topic-question.gif": "/static/media/topic-question.c2a193379ab4ded441c9.gif",
+    "static/media/student-bannar.png": "/static/media/student-bannar.c252a577a24feef978e6.png",
+    "static/media/teacher-bannar.png": "/static/media/teacher-bannar.0c369351515c0f1f3fc1.png",
+    "static/media/sopreviser-bannar.png": "/static/media/sopreviser-bannar.d688449977e2b871b55c.png",
+    "static/media/avatar-profile.png": "/static/media/avatar-profile.0d1a404a328cb76bf98f.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/logo-login.png": "/static/media/logo-login.218a68591c60c296f58e.png",
+    "static/media/logo.png": "/static/media/logo.8c7df8cebd3163b15cf2.png",
+    "static/media/it.png": "/static/media/it.56bd3083f915ad5fa379.png",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/oops.jpeg": "/static/media/oops.7205bf56b432e54e5cff.jpeg",
+    "static/media/school-avatar.png": "/static/media/school-avatar.17d052f2e0550c76e53e.png",
+    "static/media/past-paper.gif": "/static/media/past-paper.bacd3cfdbc9abec10d63.gif",
+    "static/media/subject-bannar.PNG": "/static/media/subject-bannar.e6b78d499fba220b99c8.PNG",
+    "static/media/alerm.PNG": "/static/media/alerm.9f5088114d7629f40960.PNG",
+    "static/media/google-play.png": "/static/media/google-play.e9249c768d12fe39d297.png",
+    "static/media/icon-app.png": "/static/media/icon-app.450fc94727deed708c9c.png",
+    "static/media/avatar.png": "/static/media/avatar.5653ff3e2bd6d59ab6eb.png",
+    "static/media/app-store.png": "/static/media/app-store.4c200db86c7fa898ebb3.png",
+    "static/media/hand.png": "/static/media/hand.7e5409ccd6122964dd5e.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.935817d9.css",
+    "static/js/main.d55f10c8.js"
+  ]
+}
