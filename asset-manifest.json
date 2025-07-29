@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.601adf5e.css",
-    "main.js": "/static/js/main.cfcf87da.js",
+    "main.css": "/static/css/main.59649d84.css",
+    "main.js": "/static/js/main.34d5de98.js",
     "static/js/27.45c75646.chunk.js": "/static/js/27.45c75646.chunk.js",
     "static/media/mobile-bannar.png": "/static/media/mobile-bannar.054200c314800182a594.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -24,7 +24,7 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/oops.jpeg": "/static/media/oops.7205bf56b432e54e5cff.jpeg",
     "static/media/school-avatar.png": "/static/media/school-avatar.17d052f2e0550c76e53e.png",
-    "static/media/past-paper.gif": "/static/media/past-paper.bacd3cfdbc9abec10d63.gif",
+    "static/media/past-paper.gif": "/static/media/past-paper.2f4ff29828f0574345d9.gif",
     "static/media/subject-bannar.PNG": "/static/media/subject-bannar.e6b78d499fba220b99c8.PNG",
     "static/media/alerm.PNG": "/static/media/alerm.9f5088114d7629f40960.PNG",
     "static/media/google-play.png": "/static/media/google-play.e9249c768d12fe39d297.png",
@@ -35,7 +35,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.601adf5e.css",
-    "static/js/main.cfcf87da.js"
+    "static/css/main.59649d84.css",
+    "static/js/main.34d5de98.js"
   ]
 }
