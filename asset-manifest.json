@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f497068.css",
-    "main.js": "/static/js/main.51556903.js",
-    "static/js/21.7ee4b599.chunk.js": "/static/js/21.7ee4b599.chunk.js",
-    "static/js/897.a6fe39b9.chunk.js": "/static/js/897.a6fe39b9.chunk.js",
-    "static/js/828.14ca8ea4.chunk.js": "/static/js/828.14ca8ea4.chunk.js",
+    "main.css": "/static/css/main.d63fbeeb.css",
+    "main.js": "/static/js/main.e2a06a89.js",
+    "static/js/987.e1574f48.chunk.js": "/static/js/987.e1574f48.chunk.js",
+    "static/js/249.8e393f34.chunk.js": "/static/js/249.8e393f34.chunk.js",
     "static/js/27.10c9690d.chunk.js": "/static/js/27.10c9690d.chunk.js",
-    "static/media/questionbackground2.jpg": "/static/media/questionbackground2.784ad0568de78185c450.jpg",
     "static/media/mobile-bannar.png": "/static/media/mobile-bannar.054200c314800182a594.png",
     "static/media/webbackground10.jpg": "/static/media/webbackground10.ee1801d8b1e0f042fbe4.jpg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -14,7 +12,6 @@
     "static/media/book.png": "/static/media/book.c23a1b4cb59f05b9efd8.png",
     "static/media/footer-mobile.png": "/static/media/footer-mobile.b1a0797b725c10f234f0.png",
     "static/media/logo.png": "/static/media/logo.f086f29b00efe72e55f2.png",
-    "static/media/Super Trend.ttf": "/static/media/Super Trend.1056b121a976de55f62f.ttf",
     "static/media/classes.png": "/static/media/classes.5cd42a24e78df884c733.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -28,6 +25,7 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/oops.jpeg": "/static/media/oops.7205bf56b432e54e5cff.jpeg",
     "static/media/school-avatar.png": "/static/media/school-avatar.17d052f2e0550c76e53e.png",
+    "static/media/Spicy Sale.ttf": "/static/media/Spicy Sale.f3e4703dbd073d65487c.ttf",
     "static/media/subject-bannar.PNG": "/static/media/subject-bannar.e6b78d499fba220b99c8.PNG",
     "static/media/alerm.PNG": "/static/media/alerm.9f5088114d7629f40960.PNG",
     "static/media/Happy School.ttf": "/static/media/Happy School.18c50428f5505eb80690.ttf",
@@ -39,7 +37,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.8f497068.css",
-    "static/js/main.51556903.js"
+    "static/css/main.d63fbeeb.css",
+    "static/js/main.e2a06a89.js"
   ]
 }
