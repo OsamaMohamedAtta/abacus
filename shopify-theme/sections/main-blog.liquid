@@ -1,0 +1,39 @@
+<div class="section">
+  <div class="page-width">
+    <div class="section__heading">
+      <h1>{{ blog.title }}</h1>
+    </div>
+    {%- paginate blog.articles by 9 -%}
+      <div class="testimonials__grid">
+        {%- for article in blog.articles -%}
+          <article class="testimonial">
+            {%- if article.image -%}
+              {%- assign article_alt = article.title | escape -%}
+              <a href="{{ article.url }}">{{ article.image | image_url: width: 800 | image_tag: loading: 'lazy', alt: article_alt, style: 'border-radius: 0.4rem; margin-bottom: 1.6rem;' }}</a>
+            {%- endif -%}
+            <h3 style="font-size: 1.8rem;"><a href="{{ article.url }}" style="text-decoration: none;">{{ article.title }}</a></h3>
+            <p style="font-size: 1.3rem; color: var(--color-muted);">{{ article.published_at | date: '%d.%m.%Y' }}</p>
+            <p>{{ article.excerpt_or_content | strip_html | truncate: 140 }}</p>
+          </article>
+        {%- endfor -%}
+      </div>
+      {%- if paginate.pages > 1 -%}
+        <nav class="center" style="margin-top: 4rem;" aria-label="{{ 'general.pagination.label' | t }}">
+          {%- if paginate.previous -%}
+            <a href="{{ paginate.previous.url }}" class="button button--secondary">{{ 'general.pagination.previous' | t }}</a>
+          {%- endif -%}
+          {%- if paginate.next -%}
+            <a href="{{ paginate.next.url }}" class="button button--secondary">{{ 'general.pagination.next' | t }}</a>
+          {%- endif -%}
+        </nav>
+      {%- endif -%}
+    {%- endpaginate -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog",
+  "settings": []
+}
+{% endschema %}

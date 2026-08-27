@@ -1,0 +1,65 @@
+<div class="usp-bar">
+  <div class="usp-bar__grid">
+    {%- for block in section.blocks -%}
+      <div class="usp-bar__item" {{ block.shopify_attributes }}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          {%- case block.settings.icon -%}
+            {%- when 'shield' -%}
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            {%- when 'truck' -%}
+              <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            {%- when 'check' -%}
+              <circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>
+            {%- when 'flag' -%}
+              <path d="M4 22V4a2 2 0 0 1 2-2h12l-3 5 3 5H6"/>
+          {%- endcase -%}
+        </svg>
+        {{ block.settings.text }}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "USP-bjælke",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "USP",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Ikon",
+          "options": [
+            { "value": "shield", "label": "Skjold" },
+            { "value": "truck", "label": "Lastbil" },
+            { "value": "check", "label": "Flueben" },
+            { "value": "flag", "label": "Flag" }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Tekst",
+          "default": "Lab-testet kvalitet"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "USP-bjælke",
+      "blocks": [
+        { "type": "usp", "settings": { "icon": "shield", "text": "Lab-testet kvalitet" } },
+        { "type": "usp", "settings": { "icon": "truck", "text": "Gratis fragt over 399 kr." } },
+        { "type": "usp", "settings": { "icon": "check", "text": "30 dages returret" } },
+        { "type": "usp", "settings": { "icon": "flag", "text": "Dansk kundeservice" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

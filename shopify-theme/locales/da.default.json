@@ -1,0 +1,107 @@
+{
+  "general": {
+    "meta": {
+      "tags": "Tagget \"{{ tags }}\"",
+      "page": "Side {{ page }}"
+    },
+    "404": {
+      "title": "Siden blev ikke fundet",
+      "subtext": "Siden, du leder efter, findes ikke.",
+      "link": "Fortsæt med at handle"
+    },
+    "search": {
+      "search": "Søg",
+      "placeholder": "Søg efter produkter",
+      "results_with_count": {
+        "one": "{{ count }} resultat for \"{{ terms }}\"",
+        "other": "{{ count }} resultater for \"{{ terms }}\""
+      },
+      "no_results": "Ingen resultater for \"{{ terms }}\". Prøv en anden søgning."
+    },
+    "pagination": {
+      "previous": "Forrige",
+      "next": "Næste",
+      "label": "Sideinddeling"
+    },
+    "social": {
+      "follow_label": "Følg os"
+    }
+  },
+  "accessibility": {
+    "skip_to_text": "Gå direkte til indhold",
+    "close": "Luk",
+    "menu": "Menu",
+    "cart": "Indkøbskurv",
+    "vendor": "Forhandler:"
+  },
+  "sections": {
+    "header": {
+      "announcement": "Meddelelse",
+      "menu": "Menu",
+      "cart_count": {
+        "one": "{{ count }} vare",
+        "other": "{{ count }} varer"
+      }
+    },
+    "cart": {
+      "title": "Din kurv",
+      "empty": "Din kurv er tom",
+      "continue_shopping": "Fortsæt med at handle",
+      "checkout": "Gå til kassen",
+      "update": "Opdater kurv",
+      "remove": "Fjern",
+      "quantity": "Antal",
+      "subtotal": "Subtotal",
+      "taxes_and_shipping_at_checkout": "Moms og fragt beregnes ved kassen",
+      "product": "Produkt",
+      "total": "Total"
+    },
+    "footer": {
+      "payment": "Betalingsmetoder"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Læg i kurv",
+      "sold_out": "Udsolgt",
+      "unavailable": "Ikke tilgængelig",
+      "on_sale": "Tilbud",
+      "quantity": "Antal",
+      "vendor": "Forhandler",
+      "view_details": "Se produkt",
+      "regular_price": "Normalpris",
+      "sale_price": "Tilbudspris",
+      "from_price_html": "Fra {{ price }}",
+      "tax_included": "Inkl. moms.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Fragt</a> beregnes ved kassen."
+    },
+    "facets": {
+      "product_count": {
+        "one": "{{ count }} produkt",
+        "other": "{{ count }} produkter"
+      }
+    }
+  },
+  "templates": {
+    "collection": {
+      "empty": "Ingen produkter fundet",
+      "all_products": "Alle produkter"
+    },
+    "contact": {
+      "form": {
+        "name": "Navn",
+        "email": "E-mail",
+        "phone": "Telefonnummer",
+        "comment": "Besked",
+        "send": "Send besked",
+        "post_success": "Tak, fordi du kontaktede os. Vi vender tilbage hurtigst muligt.",
+        "error_heading": "Ret venligst følgende:"
+      }
+    }
+  },
+  "newsletter": {
+    "label": "E-mail",
+    "success": "Tak for din tilmelding!",
+    "button_label": "Tilmeld"
+  }
+}
