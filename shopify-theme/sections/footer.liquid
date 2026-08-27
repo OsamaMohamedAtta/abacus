@@ -1,0 +1,83 @@
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="site-footer__grid">
+      <div>
+        <h3 class="site-footer__title">{{ shop.name }}</h3>
+        <p style="opacity: 0.8; max-width: 34rem; font-size: 1.45rem;">{{ section.settings.about_text }}</p>
+      </div>
+      <div>
+        <h3 class="site-footer__title">{{ section.settings.menu_title }}</h3>
+        <ul>
+          {%- for link in section.settings.menu.links -%}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      <div>
+        <h3 class="site-footer__title">{{ section.settings.contact_title }}</h3>
+        <ul>
+          {%- if section.settings.contact_email != blank -%}
+            <li><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></li>
+          {%- endif -%}
+          {%- if section.settings.contact_text != blank -%}
+            <li>{{ section.settings.contact_text }}</li>
+          {%- endif -%}
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. Alle rettigheder forbeholdes.</span>
+      <span>
+        {%- for policy in shop.policies -%}
+          {%- if policy != blank -%}
+            <a href="{{ policy.url }}" style="margin-left: 1.6rem;">{{ policy.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </span>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Sidefod",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "about_text",
+      "label": "Om butikken",
+      "default": "Vi designer pålideligt beredskabsudstyr, der beskytter det, der betyder mest. Vi tror på, at det at være forberedt skal være enkelt, tilgængeligt og til at betale."
+    },
+    {
+      "type": "text",
+      "id": "menu_title",
+      "label": "Menutitel",
+      "default": "Genveje"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Sidefodsmenu",
+      "default": "footer"
+    },
+    {
+      "type": "text",
+      "id": "contact_title",
+      "label": "Kontakt-titel",
+      "default": "Kundeservice"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Kontakt-e-mail",
+      "default": "support@dinbutik.dk"
+    },
+    {
+      "type": "text",
+      "id": "contact_text",
+      "label": "Ekstra kontaktinfo",
+      "default": "Man–fre kl. 9–16"
+    }
+  ]
+}
+{% endschema %}

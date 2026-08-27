@@ -1,0 +1,67 @@
+<div class="section{% if section.settings.dark %} section--dark{% endif %}">
+  <div class="page-width">
+    <div class="section__heading">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="testimonials__grid">
+      {%- for block in section.blocks -%}
+        <div class="testimonial" {{ block.shopify_attributes }}>
+          <div class="testimonial__stars" aria-label="5 ud af 5 stjerner">★★★★★</div>
+          <p class="testimonial__quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+          <p class="testimonial__author">— {{ block.settings.author }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Anmeldelser",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Overskrift",
+      "default": "Det siger vores kunder"
+    },
+    {
+      "type": "checkbox",
+      "id": "dark",
+      "label": "Mørk baggrund",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Anmeldelse",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Citat",
+          "default": "Imponerende kvalitet — hele familien er dækket nu."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Navn",
+          "default": "Tilfreds kunde"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Anmeldelser",
+      "blocks": [
+        { "type": "testimonial", "settings": { "quote": "Vandfilteret virkede med det samme, da vi testede det på campingturen. Lille, let og nemt at bruge — nu ligger der ét i hver rygsæk.", "author": "Mette, Aarhus" } },
+        { "type": "testimonial", "settings": { "quote": "Bestilte familiepakken efter sidste storm. Hurtig levering og rigtig god kvalitet. Det giver ro i maven at vide, at vi er forberedte.", "author": "Jonas, København" } },
+        { "type": "testimonial", "settings": { "quote": "Enkel bestilling og grundige danske vejledninger. Nødsoveposen fylder ingenting i handskerummet. Klar anbefaling herfra.", "author": "Karin, Odense" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

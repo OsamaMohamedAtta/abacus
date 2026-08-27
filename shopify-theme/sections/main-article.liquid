@@ -1,0 +1,18 @@
+<article class="section">
+  <div class="page-width" style="max-width: 76rem;">
+    <h1>{{ article.title }}</h1>
+    <p style="font-size: 1.3rem; color: var(--color-muted);">{{ article.published_at | date: '%d.%m.%Y' }}</p>
+    {%- if article.image -%}
+      {%- assign article_alt = article.title | escape -%}
+      {{ article.image | image_url: width: 1400 | image_tag: loading: 'eager', alt: article_alt, style: 'border-radius: 0.8rem; margin: 2rem 0;' }}
+    {%- endif -%}
+    <div class="rte">{{ article.content }}</div>
+  </div>
+</article>
+
+{% schema %}
+{
+  "name": "Artikel",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,79 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Nordisk Beredskab",
+    "theme_version": "1.0.0",
+    "theme_author": "Claude Code",
+    "theme_documentation_url": "https://help.shopify.com",
+    "theme_support_url": "https://help.shopify.com"
+  },
+  {
+    "name": "Farver",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Baggrund",
+        "default": "#f7f6f3"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Tekst",
+        "default": "#1c1f1a"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accentfarve (knapper)",
+        "default": "#c2570f"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_contrast",
+        "label": "Tekst på accentfarve",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_dark",
+        "label": "Mørke sektioner",
+        "default": "#181d17"
+      },
+      {
+        "type": "color",
+        "id": "color_dark_text",
+        "label": "Tekst på mørke sektioner",
+        "default": "#f2efe9"
+      }
+    ]
+  },
+  {
+    "name": "Typografi",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "type_header_font",
+        "label": "Overskrifter",
+        "default": "archivo_n7"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "label": "Brødtekst",
+        "default": "inter_n4"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon-billede",
+        "info": "Skaleres ned til 32 x 32 px"
+      }
+    ]
+  }
+]

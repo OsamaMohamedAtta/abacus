@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_accent }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+  {%- endif -%}
+
+  <title>
+    {{ page_title }}
+    {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags | join: ', ' }}{% endif -%}
+    {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  </title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+  {{ content_for_header }}
+
+  {%- liquid
+    assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+    assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+  -%}
+
+  {% style %}
+    {{ settings.type_body_font | font_face: font_display: 'swap' }}
+    {{ body_font_bold | font_face: font_display: 'swap' }}
+    {{ body_font_italic | font_face: font_display: 'swap' }}
+    {{ settings.type_header_font | font_face: font_display: 'swap' }}
+
+    :root {
+      --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+      --font-body-weight: {{ settings.type_body_font.weight }};
+      --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+      --font-heading-weight: {{ settings.type_header_font.weight }};
+      --color-background: {{ settings.color_background }};
+      --color-text: {{ settings.color_text }};
+      --color-accent: {{ settings.color_accent }};
+      --color-accent-contrast: {{ settings.color_accent_contrast }};
+      --color-dark: {{ settings.color_dark }};
+      --color-dark-text: {{ settings.color_dark_text }};
+      --color-border: {{ settings.color_text | color_modify: 'alpha', 0.12 }};
+      --color-muted: {{ settings.color_text | color_modify: 'alpha', 0.65 }};
+    }
+  {% endstyle %}
+
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+</head>
+
+<body class="template-{{ request.page_type | handle }}">
+  <a class="skip-to-content-link visually-hidden" href="#MainContent">
+    {{ 'accessibility.skip_to_text' | t }}
+  </a>
+
+  {% section 'announcement-bar' %}
+  {% section 'header' %}
+
+  <main id="MainContent" class="content-for-layout" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'footer' %}
+</body>
+</html>

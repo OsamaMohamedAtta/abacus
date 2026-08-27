@@ -1,0 +1,12 @@
+{
+  "current": {
+    "color_background": "#f7f6f3",
+    "color_text": "#1c1f1a",
+    "color_accent": "#c2570f",
+    "color_accent_contrast": "#ffffff",
+    "color_dark": "#181d17",
+    "color_dark_text": "#f2efe9",
+    "type_header_font": "archivo_n7",
+    "type_body_font": "inter_n4"
+  }
+}

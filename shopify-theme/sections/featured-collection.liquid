@@ -1,0 +1,78 @@
+<div class="section">
+  <div class="page-width">
+    <div class="section__heading">
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.subheading != blank -%}
+        <p>{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    <ul class="product-grid">
+      {%- assign collection = section.settings.collection -%}
+      {%- if collection != blank and collection.products.size > 0 -%}
+        {%- for product in collection.products limit: section.settings.products_to_show -%}
+          {% render 'product-card', card_product: product %}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for i in (1..4) -%}
+          <li class="product-card">
+            <div class="product-card__media">{{ 'product-' | append: forloop.index | placeholder_svg_tag }}</div>
+            <div class="product-card__info">
+              <h3 class="product-card__title">Eksempelprodukt {{ forloop.index }}</h3>
+              <div class="product-card__price">299 kr.</div>
+            </div>
+          </li>
+        {%- endfor -%}
+      {%- endif -%}
+    </ul>
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="center" style="margin-top: 4rem;">
+        <a href="{{ collection.url | default: routes.all_products_collection_url }}" class="button">{{ section.settings.button_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Udvalgte produkter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Overskrift",
+      "default": "Udstyr, du kan stole på"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Undertekst",
+      "default": "Hvert produkt er testet i laboratoriet og bygget til virkelige nødsituationer — ikke til hylden."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Kollektion"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "label": "Antal produkter",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Knaptekst",
+      "default": "Se alle produkter"
+    }
+  ],
+  "presets": [
+    { "name": "Udvalgte produkter" }
+  ]
+}
+{% endschema %}

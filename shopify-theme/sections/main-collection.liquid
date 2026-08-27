@@ -1,0 +1,43 @@
+<div class="section">
+  <div class="page-width">
+    <div class="section__heading">
+      <h1>{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}
+        <p>{{ collection.description | strip_html }}</p>
+      {%- endif -%}
+      <p style="font-size: 1.35rem; color: var(--color-muted);">
+        {{ 'products.facets.product_count' | t: count: collection.products_count }}
+      </p>
+    </div>
+
+    {%- paginate collection.products by 12 -%}
+      {%- if collection.products.size > 0 -%}
+        <ul class="product-grid">
+          {%- for product in collection.products -%}
+            {% render 'product-card', card_product: product %}
+          {%- endfor -%}
+        </ul>
+      {%- else -%}
+        <p class="center">{{ 'templates.collection.empty' | t }}</p>
+      {%- endif -%}
+
+      {%- if paginate.pages > 1 -%}
+        <nav class="center" style="margin-top: 4rem;" aria-label="{{ 'general.pagination.label' | t }}">
+          {%- if paginate.previous -%}
+            <a href="{{ paginate.previous.url }}" class="button button--secondary">{{ 'general.pagination.previous' | t }}</a>
+          {%- endif -%}
+          {%- if paginate.next -%}
+            <a href="{{ paginate.next.url }}" class="button button--secondary">{{ 'general.pagination.next' | t }}</a>
+          {%- endif -%}
+        </nav>
+      {%- endif -%}
+    {%- endpaginate -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Kollektion",
+  "settings": []
+}
+{% endschema %}

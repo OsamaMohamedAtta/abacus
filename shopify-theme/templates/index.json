@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "settings": {
+        "kicker": "Beredskabsudstyr til hele familien",
+        "heading": "Vær klar, når det gælder",
+        "text": "Lab-testet nødudstyr, der beskytter dem, du holder mest af — rent drikkevand, varme og strøm, når nettet svigter.",
+        "button_label": "Shop udstyret",
+        "button_label_2": "Sådan virker det"
+      }
+    },
+    "usp": {
+      "type": "usp-bar",
+      "blocks": {
+        "usp1": { "type": "usp", "settings": { "icon": "shield", "text": "Lab-testet kvalitet" } },
+        "usp2": { "type": "usp", "settings": { "icon": "truck", "text": "Gratis fragt over 399 kr." } },
+        "usp3": { "type": "usp", "settings": { "icon": "check", "text": "30 dages returret" } },
+        "usp4": { "type": "usp", "settings": { "icon": "flag", "text": "Dansk kundeservice" } }
+      },
+      "block_order": ["usp1", "usp2", "usp3", "usp4"]
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Udstyr, du kan stole på",
+        "subheading": "Hvert produkt er testet i laboratoriet og bygget til virkelige nødsituationer — ikke til hylden.",
+        "products_to_show": 4,
+        "button_label": "Se alle produkter"
+      }
+    },
+    "why": {
+      "type": "image-with-text",
+      "settings": {
+        "kicker": "Hvorfor os",
+        "heading": "Bygget til virkeligheden",
+        "text": "<p>Strømafbrydelser, storme og forurenet drikkevand venter ikke på, at du bliver klar. Vores udstyr er udviklet og testet til at fungere, når alt andet svigter — enkelt nok til, at hele familien kan bruge det.</p>",
+        "button_label": "Læs vores historie"
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": { "type": "testimonial", "settings": { "quote": "Vandfilteret virkede med det samme, da vi testede det på campingturen. Lille, let og nemt at bruge — nu ligger der ét i hver rygsæk.", "author": "Mette, Aarhus" } },
+        "t2": { "type": "testimonial", "settings": { "quote": "Bestilte familiepakken efter sidste storm. Hurtig levering og rigtig god kvalitet. Det giver ro i maven at vide, at vi er forberedte.", "author": "Jonas, København" } },
+        "t3": { "type": "testimonial", "settings": { "quote": "Enkel bestilling og grundige danske vejledninger. Nødsoveposen fylder ingenting i handskerummet. Klar anbefaling herfra.", "author": "Karin, Odense" } }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {
+        "heading": "Det siger vores kunder"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Bliv klar — før det gælder",
+        "text": "Tilmeld dig og få beredskabstips, nye produkter og eksklusive tilbud direkte i din indbakke."
+      }
+    }
+  },
+  "order": ["hero", "usp", "featured", "why", "reviews", "newsletter"]
+}
