@@ -373,6 +373,14 @@
         "align_text": "center",
         "divider": false
       }
+    },
+    "video": {
+      "type": "featured-video",
+      "settings": {
+        "title": "Se sættet i aktion",
+        "video_url": "https://www.youtube.com/watch?v=B0h4uDRC_FM",
+        "divider": true
+      }
     }
   },
   "order": [
@@ -381,6 +389,7 @@
     "buy-box",
     "story-1",
     "story-2",
+    "video",
     "whats-included",
     "usp-icons",
     "faq",
