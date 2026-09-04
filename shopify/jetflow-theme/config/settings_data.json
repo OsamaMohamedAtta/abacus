@@ -1,0 +1,174 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#000000",
+    "color_price": "#1c1d1d",
+    "color_savings_text": "#C20000",
+    "color_borders": "#e8e8e1",
+    "color_button": "#111111",
+    "color_button_text": "#ffffff",
+    "color_cart_dot": "#ff4f33",
+    "color_small_image_bg": "#ffffff",
+    "color_large_image_bg": "#0f0f0f",
+    "color_header": "#ffffff",
+    "color_header_text": "#000000",
+    "color_announcement": "#0f0f0f",
+    "color_announcement_text": "#ffffff",
+    "color_footer": "#ffffff",
+    "color_footer_text": "#000000",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#000000",
+    "color_drawer_border": "#e8e8e1",
+    "color_drawer_button": "#111111",
+    "color_drawer_button_text": "#ffffff",
+    "color_modal_overlays": "#e6e6e6",
+    "color_image_overlay": "#000000",
+    "color_image_overlay_text_shadow": 20,
+    "type_header_font_family": "tenor_sans_n4",
+    "type_header_spacing": "0",
+    "type_header_base_size": 36,
+    "type_header_line_height": 1,
+    "type_header_capitalize": true,
+    "type_headers_align_text": true,
+    "type_base_font_family": "twentieth_century_n4",
+    "type_base_spacing": "25",
+    "type_base_size": 18,
+    "type_base_line_height": 1.4,
+    "type_body_align_text": true,
+    "type_navigation_style": "body",
+    "type_navigation_size": 16,
+    "type_navigation_capitalize": true,
+    "type_product_style": "body",
+    "type_collection_font": "body",
+    "type_collection_size": 20,
+    "button_style": "square",
+    "icon_weight": "2px",
+    "icon_linecaps": "miter",
+    "quick_shop_text": "Quick view",
+    "product_grid_image_size": "natural",
+    "product_hover_image": false,
+    "collection_grid_style": "overlaid-box",
+    "collection_grid_shape": "square",
+    "collection_grid_image": "product",
+    "collection_grid_text_align": "center",
+    "collection_grid_tint": "#000000",
+    "collection_grid_opacity": 10,
+    "collection_grid_gutter": true,
+    "cart_type": "drawer",
+    "cart_notes_enable": false,
+    "cart_terms_conditions_enable": false,
+    "breadcrumb": false,
+    "checkout_accent_color": "#111111",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_button_color": "#111111",
+    "checkout_error_color": "#ff6d6d",
+    "checkout_input_background_color_mode": "white",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_sidebar_background_color": "#fafafa",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1524770014057": {
+            "type": "logo",
+            "settings": {
+              "desktop_logo_width": 140,
+              "mobile_logo_width": 110
+            }
+          },
+          "1524770292306": {
+            "type": "announcement",
+            "settings": {
+              "text": "Hurtig levering i hele Danmark",
+              "link_text": "Direkte til din dør"
+            }
+          },
+          "1524770296206": {
+            "type": "announcement",
+            "settings": {
+              "text": "14 dages fortrydelsesret",
+              "link_text": "Nem og enkel retur"
+            }
+          }
+        },
+        "block_order": [
+          "1524770014057",
+          "1524770292306",
+          "1524770296206"
+        ],
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "main_menu_alignment": "center-split",
+          "header_style": "sticky",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "announcement_compact": true,
+          "toolbar_menu": "top",
+          "toolbar_social": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1494301487048": {
+            "type": "logo_social",
+            "settings": {
+              "container_width": 95
+            }
+          },
+          "1494301487049": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer",
+              "container_width": 25
+            }
+          },
+          "1494292487693": {
+            "type": "newsletter",
+            "settings": {
+              "container_width": 33
+            }
+          }
+        },
+        "block_order": [
+          "1494301487049",
+          "1494292487693",
+          "1494301487048"
+        ],
+        "settings": {
+          "show_payment_icons": false
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "blocks": {
+          "reminder-block": {
+            "type": "header",
+            "disabled": true,
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "reminder-block"
+        ],
+        "settings": {}
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "enable": true,
+          "collection_image_enable": true,
+          "parallax": true
+        }
+      }
+    },
+    "blocks": {
+      "625552106660561773": {
+        "type": "shopify://apps//blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}
